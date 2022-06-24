@@ -13,7 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>HouseVOP</title>
 </head>
@@ -21,10 +23,8 @@
 <body>
     <div class="wrapper">
         <header class="header">
-             <!-- зачем используешь имя класса с _ -->
             <div class="header__container container">
                 <div class="header__logo">
-                    <!-- не валидно будет из-за href засунь хотябы # -->
                     <a href="#" class="logo-link">
                         <div class="logo-link__block">
                             <p class="logo-link__title">HouseVOP</p>
@@ -49,19 +49,17 @@
                     <div class="main-block__body">
                         <h1 class="main-block__title">Жилой комплекс<br> в историческом центре</h1>
                         <div class="main-block__icon">
-                            <!-- с путем все не бует работать если переименовать HouseVOP папку.
-                            src=".//img/main_block/main_svg/mouse.svg" -->
                             <img src=".//img/main_block/main_svg/mouse.svg" alt="" srcset="">
                         </div>
                         <div class="main-block__contacts">
                             <div class="contacts__placeholder">
-                                <img class="placeholder__img" src=".//img/main_block/main_svg/placeholder.svg"
-                                    alt="" srcset="">
+                                <img class="placeholder__img" src=".//img/main_block/main_svg/placeholder.svg" alt=""
+                                    srcset="">
                                 <div class="placeholder">Наб. реки Фонтанки 10-15 </div>
                             </div>
                             <div class="contacts__phone-call">
-                                <img class="phone-call__img" src=".//img/main_block/main_svg/phone-call.svg"
-                                    alt="" srcset="">
+                                <img class="phone-call__img" src=".//img/main_block/main_svg/phone-call.svg" alt=""
+                                    srcset="">
                                 <a class="phone-number" href="tel:+8(812)123-45-67">8 (812) 123-45-67</a>
                             </div>
                         </div>
@@ -75,14 +73,10 @@
                 <div class="improvement__container  container">
                     <div class="improvement__body">
                         <div class="improvement__column">
-                            <!-- для чего items__improvement -->
                             <div class="improvement__items  items__improvement">
                                 <div class="items__improvement_icon">
                                     <img src=".//img/Improvement/bench.svg" alt="" srcset="">
                                 </div>
-                                <!-- Что за подход к названию классов? Если это БЕМ то используешь его не прпавильно. Одним дэшем обозначается модификатор.
-                                модификатор должен быть либо у блока, либо у элемента.
-                                пример тут : class="items__improvement items__improvement_descr" -->
                                 <div class="items__improvement_descr">
                                     <p>Рядом исторические
                                         парки и скверы</p>
@@ -198,7 +192,6 @@
                         </div>
                         <div class="application__column">
                             <div class="application__form form">
-                                <!-- тут тоже не по БЕМ -->
                                 <form action="#" id="form" class="form__body">
                                     <div class="form__column">
                                         <div class="form__item">
@@ -305,7 +298,6 @@
                     <div class="footer__column">
                         <div class="footer__item">
                             <div class="footer__logo logo">
-                                <!-- вот тут по БЕМ -->
                                 <a href="#" class="logo-link">
                                     <div class="logo-link__block">
                                         <p class="logo-link__title">HouseVOP</p>
