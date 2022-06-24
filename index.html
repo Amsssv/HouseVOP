@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru, en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>HouseVOP</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+             <!-- зачем используешь имя класса с _ -->
+            <div class="header__container container">
+                <div class="header__logo">
+                    <!-- не валидно будет из-за href засунь хотябы # -->
+                    <a href="#" class="logo-link">
+                        <div class="logo-link__block">
+                            <p class="logo-link__title">HouseVOP</p>
+                            <p class="logo-link__subtitle">ЖИЛОЙ КОМПЛЕКС</p>
+                        </div>
+                    </a>
+                </div>
+                <nav class="header__menu _menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О комплексе</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Район</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог квартир</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Ипотека</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__main-block  main-block ">
+                <div class="main-block__container  container">
+                    <div class="main-block__body">
+                        <h1 class="main-block__title">Жилой комплекс<br> в историческом центре</h1>
+                        <div class="main-block__icon">
+                            <!-- с путем все не бует работать если переименовать HouseVOP папку.
+                            src=".//img/main_block/main_svg/mouse.svg" -->
+                            <img src=".//img/main_block/main_svg/mouse.svg" alt="" srcset="">
+                        </div>
+                        <div class="main-block__contacts">
+                            <div class="contacts__placeholder">
+                                <img class="placeholder__img" src=".//img/main_block/main_svg/placeholder.svg"
+                                    alt="" srcset="">
+                                <div class="placeholder">Наб. реки Фонтанки 10-15 </div>
+                            </div>
+                            <div class="contacts__phone-call">
+                                <img class="phone-call__img" src=".//img/main_block/main_svg/phone-call.svg"
+                                    alt="" srcset="">
+                                <a class="phone-number" href="tel:+8(812)123-45-67">8 (812) 123-45-67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-block__image _ibg">
+                    <img src=".//img/main_block/Rectangle.jpg" alt="cover" srcset="">
+                </div>
+            </div>
+            <section class="page__improvement improvement">
+                <div class="improvement__container  container">
+                    <div class="improvement__body">
+                        <div class="improvement__column">
+                            <!-- для чего items__improvement -->
+                            <div class="improvement__items  items__improvement">
+                                <div class="items__improvement_icon">
+                                    <img src=".//img/Improvement/bench.svg" alt="" srcset="">
+                                </div>
+                                <!-- Что за подход к названию классов? Если это БЕМ то используешь его не прпавильно. Одним дэшем обозначается модификатор.
+                                модификатор должен быть либо у блока, либо у элемента.
+                                пример тут : class="items__improvement items__improvement_descr" -->
+                                <div class="items__improvement_descr">
+                                    <p>Рядом исторические
+                                        парки и скверы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="improvement__column">
+                            <div class="improvement__items  items__improvement">
+                                <div class="items__improvement_icon">
+                                    <img src=".//img/Improvement/building.svg" alt="" srcset="">
+                                </div>
+                                <div class="items__improvement_descr">
+                                    <p>Полностью
+                                        обустроенный</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="improvement__column">
+                            <div class="improvement__items  items__improvement">
+                                <div class="items__improvement_icon">
+                                    <img src=".//img/Improvement/fountain.svg" alt="" srcset="">
+                                </div>
+                                <div class="items__improvement_descr">
+                                    <p>10 фонтанов
+                                        на территории </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="improvement__column">
+                            <div class="improvement__items  items__improvement">
+                                <div class="items__improvement_icon">
+                                    <img src=".//img/Improvement/bicycle.svg" alt="" srcset="">
+                                </div>
+                                <div class="items__improvement_descr">
+                                    <p>6 км
+                                        велодорожек</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__number">
+                            <h2 class="number__II">II</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__apartment apartment">
+                <div class="apartment__container  container">
+                    <div class="apartment__title title">
+                        <p>Наши квартиры</p>
+                    </div>
+                    <div class="apartment__body">
+                        <div class="apartment__column">
+                            <a href="#" class="apartment__item _ibg">
+                                <img class="apartment__image " src=".//img/apartment/Apartment_1.png"
+                                    alt="apartment__image" srcset="">
+                                <div class="apartment__name">
+                                    <p>Лофт — 3 этажа</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="apartment__column">
+                            <a href="#" class="apartment__item _ibg">
+                                <img class="apartment__image " src=".//img/apartment/Apartment_2.png"
+                                    alt="apartment__image" srcset="">
+                                <div class="apartment__name">
+                                    <p>Лофт — 2 этажа</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="apartment__column">
+                            <a href="#" class="apartment__item _ibg">
+                                <img class="apartment__image " src=".//img/apartment/Apartment_1.png"
+                                    alt="apartment__image" srcset="">
+                                <div class="apartment__name">
+                                    <p>Лофт — 3 этажа</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="apartment__column">
+                            <a href="#" class="apartment__item _ibg">
+                                <img class="apartment__image " src=".//img/apartment/Apartment_2.png"
+                                    alt="apartment__image" srcset="">
+                                <div class="apartment__name">
+                                    <p>Лофт — 2 этажа</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="page__number">
+                            <h3 class="number__III">III</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__application application">
+                <div class="application__container  container">
+                    <div class="application__body">
+                        <div class="application__column">
+                            <div class="application__item">
+                                <div class="application__description">
+                                    <div class="application__title title">
+                                        <p>Хотите посмотреть?</p>
+                                    </div>
+                                    <div class="application__text">
+                                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В
+                                        то
+                                        время некий безымянный печатник создал большую коллекцию размеров и форм
+                                        шрифтов,
+                                        используя Lorem Ipsum для распечатки образцов.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application__column">
+                            <div class="application__form form">
+                                <!-- тут тоже не по БЕМ -->
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <input type="text" name="name" id="formName" class="form_input"
+                                                placeholder="Ваше имя">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <input type="tel" name="tel" id="formtel" class="form_input"
+                                                placeholder="Ваш телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <p class="submit-text">*Мы никому не передаем ваши данные.
+                                                И не сохраняем ваш номер в базу.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <button class="form__button" type="submit">Посмотреть район</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="application-block__image _ibg">
+                    <img src=".//img/application/Buldings.png" alt="cover" srcset="">
+                </div>
+            </section>
+            <section class="page__video ">
+                <div class="video__container  container">
+                    <div class="video__body">
+                        <video preload="metadata" poster=".//img/video/video.png" controls class="video__item"
+                            src="#"></video>
+                    </div>
+                    <div class="page__number">
+                        <h3 class="number__IV">IV</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="page__map map">
+                <div class="map__container  container">
+                    <div class="map__body">
+                        <div class="map__title title">
+                            <p>Район на карте</p>
+                        </div>
+                        <div class="map__window">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2867.0821532824343!2d30.336966595811695!3d59.94429136103856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2sFontanka%20River%20Embankment%2C%2010%2C%20Sankt-Peterburg%2C%20Russia%2C%20191187!5e0!3m2!1sen!2sus!4v1645115286545!5m2!1sen!2sus"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="page__number">
+                        <h3 class="number__V">V</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="page__questions questions">
+                <div class="questions__container  container">
+                    <div class="questions__dody">
+                        <div class="questions__title title">
+                            <p>Есть вопросы?</p>
+                        </div>
+                        <div class="questions__column">
+                            <div class="questions__item">
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <input type="text" name="name" id="formName" class="form_input"
+                                                placeholder="Ваше имя">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <input type="tel" name="tel" id="formtel" class="form_input"
+                                                placeholder="Ваш телефон">
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <p class="submit-text">*Мы никому не передаем ваши данные.
+                                                И не сохраняем ваш номер в базу.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form__column">
+                                        <div class="form__item">
+                                            <button class="form__button" type="submit">Посмотреть район</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container  container">
+                <div class="footer__body">
+                    <div class="footer__column">
+                        <div class="footer__item">
+                            <div class="footer__logo logo">
+                                <!-- вот тут по БЕМ -->
+                                <a href="#" class="logo-link">
+                                    <div class="logo-link__block">
+                                        <p class="logo-link__title">HouseVOP</p>
+                                        <p class="logo-link__subtitle">ЖИЛОЙ КОМПЛЕКС</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <nav class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">О комплексе</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Район</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Каталог квартир</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Ипотека</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <nav class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">О комплексе</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Район</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Каталог квартир</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Ипотека</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__menu footer__contacts">
+                            <a href="#" class="footer__contacts adress">Адрес: Наб. реки Фонтанки 10-15</a>
+                            <a href="tel:+78121234567" class="footer__contacts phone">Телефон: 8 (812) 123-45-67</a>
+                            <p class="footer__contacts time">Отдел продаж: 10:00 - 20:00</p>
+                            <a href="mailto:vip@housevip.ru" class="footer__contacts E-mail">E-mail:<span>
+                                    vip@housevip.ru</span></a>
+                            <div class="social__media">
+                                <a href="#" class="social__item">
+                                    <img src=".//img/footer/YouTube.svg" alt="social" srcset="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src=".//img/footer/VK.svg" alt="social" srcset="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src=".//img/footer/facebook-logo.svg" alt="social" srcset="">
+                                </a>
+                                <a href="#" class="social__item">
+                                    <img src=".//img/footer/instagram.svg" alt="social" srcset="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/sript.js"></script>
+</body>
+
+</html>

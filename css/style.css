@@ -1,0 +1,964 @@
+/* МОжно обнуления подключить отдельно */
+/*Обнуление - путина))*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+/*--------------------*/
+/* ты уже в html подключаешь шрифт. выбери один подход */
+@font-face {
+	font-family: 'PostNoBillsJaffna';
+	src: url('../fonts/PostNoBillsJaffna-SemiBold.eot');
+	src: local('☺'), url('../fonts/PostNoBillsJaffna-SemiBold.woff') format('woff'), url('../fonts/PostNoBillsJaffna-SemiBold.ttf') format('truetype'), url('../fonts/PostNoBillsJaffna-SemiBold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+* {
+	color: #fff;
+	font-weight: 400;
+	font-family: Raleway, sans-serif;
+}
+
+html,
+body {
+	font-size: 14px;
+	/* для стилй шрифта на всей страницы шрифта можешь использовать селектор * */
+	height: 100%;
+	line-height: 1;
+	background-color: #242B33;
+}
+
+/*linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(photo-1493246318656-5bfd4cfb29b8.jpg);*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	box-sizing: content-box;
+}
+
+._ibg {
+	position: relative;
+}
+
+/* избегай селекторов по тегу. увилчивают специфичность */
+._ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+/*--------------------HEADER--------------------*/
+
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+.header a {
+	color: inherit;
+}
+
+.header__container {
+	display: flex;
+	min-height: 125px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+
+	/* вот это збсь практика если ты это не случайно. в css обозначить что такое элемент может быть в разметке.*/
+}
+
+.logo-link {}
+
+.logo-link__block {}
+
+.logo-link__title {
+	font-family: PostNoBillsJaffna;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: calc(54/36*100%);
+}
+
+.logo-link__subtitle {
+	font-size: 12px;
+	/* не используй line-height вот так. для вертикального выравнивания используй padding и margin  */
+	line-height: calc(14/12*100%);
+	letter-spacing: 0.12em;
+}
+
+.header__menu {
+	/* можно использовать margin-right: 120px */
+	margin: 0px 0px 0px 120px;
+}
+
+@media(max-width:992px) {
+	.header__menu {
+		margin: 0px 0px 0px 80px;
+	}
+}
+
+@media(max-width:479px) {
+	.header__menu {
+		margin: 0px 0px 0px 40px;
+	}
+}
+
+._menu {
+	padding: 5px 0px;
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.menu__item {
+	font-size: 14px;
+	line-height: calc(16/14*100%);
+	letter-spacing: 0.05em;
+	/* Натянул сову на глобсу. почему не height */
+	min-height: 20px;
+}
+
+/* где подглядел? можно так а можно просто переопределить на 0 у последнего. оба збсь */
+.menu__item:not(:last-child) {
+	margin: 0px 40px 0px 0px;
+}
+
+@media (max-width:479px) {
+	.menu__item {
+		font-size: 16px;
+	}
+
+}
+
+header {}
+
+/*--------------------PAGE--------------------*/
+
+.page {
+	flex: 1 1 auto;
+}
+
+.page__main-block {}
+
+.page__improvement {}
+
+.page__apartment {}
+
+.page__application {}
+
+.page__video {}
+
+.page__map {}
+
+.page__questions {}
+
+/*--------------------FOOTER--------------------*/
+
+.footer {}
+
+/*--------------------MAIN-BLOCK--------------------*/
+
+
+.main-block {
+	position: relative;
+}
+
+.main-block__container {}
+
+.main-block__body {
+	padding: 296px 0px 74px 0px;
+	position: relative;
+	z-index: 2;
+
+}
+
+.main-block__title {
+	font-family: Playfair display;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: calc(64/48*100%);
+	text-align: center;
+	color: #D4C17F;
+}
+
+
+.main-block__icon {
+	margin: 100px 0px 200px 0px;
+	text-align: center;
+}
+
+.main-block__contacts {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	line-height: calc(21/18*100%);
+	font-family: Raleway;
+}
+
+
+
+@media (max-width:479px) {
+	.main-block__title {
+		font-size: 32px;
+	}
+}
+
+
+.contacts__placeholder {
+	display: flex;
+	margin: 0px 50px 0px 0px;
+	flex: 0 1 50%;
+	justify-content: right;
+}
+
+.placeholder__img {
+	margin: 0px 14px 0px 0px;
+}
+
+
+.placeholder {}
+
+.contacts__phone-call {
+	flex: 0 1 50%;
+	margin: 0px 0px 0px 50px;
+}
+
+/* тут можно css переменные использовать с fallback'ом для старых браузеров. */
+@media (max-width:676px) {
+	.main-block__icon {
+		margin: 50px 0px 100px 0px;
+	}
+
+	.main-block__contacts {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/* хоспади. так ненадо писать селекторы */
+	.main-block__contacts>*:not(:last-child) {
+		margin: 20px 0px;
+	}
+
+	.contacts__placeholder {
+		display: inline-flex;
+	}
+
+	.contacts__phone-call {
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+.phone-call__img {
+	margin: 0px 14px 0px 0px;
+}
+
+.phone-number {
+	color: #fff;
+}
+
+.main-block__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.main-block__image img {
+	object-position: center;
+}
+
+/*--------------------IMPROVEMENT-BLOCK--------------------*/
+
+
+
+.improvement__container {
+	max-width: 1050px;
+	padding: 120px 0px;
+}
+
+.improvement__body {
+	position: relative;
+}
+
+@media (min-width: 576px) {
+	.improvement__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -20px -20px;
+	}
+}
+
+.improvement__column {
+	flex: 0 1 25%;
+	padding: 0px 20px;
+	margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 992px) {
+	.improvement__container {
+		padding: 80px 0px;
+	}
+
+	.improvement__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 576px) {
+	.improvement__container {
+		padding: 40px 0px;
+	}
+}
+
+.improvement__items {
+	height: 100%;
+	padding: 0px 20px;
+}
+
+.items__improvement {
+	text-align: center;
+}
+
+.items__improvement_icon {
+	margin: 0px 0px 40px 0px;
+}
+
+.items__improvement_descr {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: calc(27/20*100%);
+}
+
+.page__number {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 400px;
+	line-height: 533px;
+	opacity: 0.02;
+}
+
+.number__II {
+	position: absolute;
+	top: -200px;
+
+}
+
+@media (max-width: 1500px) {
+	.page__number {
+		font-size: 300px;
+	}
+
+	.number__II {
+		position: absolute;
+	}
+}
+
+@media (max-width: 1300px) {
+	.number__II {
+		display: none;
+	}
+}
+
+/*--------------------APARTMENT-BLOCK--------------------*/
+
+
+.apartment {}
+
+.apartment__container {}
+
+
+.apartment__title {
+	margin: 0px 0px 100px 0px;
+}
+
+.title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: calc(48/36*100%);
+	color: #D4C17F;
+}
+
+
+.apartment__body {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -20px -30px;
+}
+
+.apartment__body a {
+	color: #fff;
+	display: block;
+}
+
+.apartment__column {
+	flex: 0 1 50%;
+	padding: 0px 20px 30px;
+}
+
+@media (max-width:992px) {
+	.apartment__column {
+		flex: 0 1 100%;
+	}
+}
+
+@media (max-width:676px) {
+	.apartment__title {
+		margin: 0px 0px 70px 0px;
+	}
+
+	.apartment__name {
+		padding: 10%;
+		font-size: 20px;
+	}
+}
+
+.apartment__item {
+	position: relative;
+	padding: 0px 0px 60% 0px;
+}
+
+.apartment__image {}
+
+.apartment__name {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 50px;
+	font-family: Raleway;
+	font-size: 28px;
+	line-height: 116%;
+}
+
+/* перенеси в предыдущий @media с таким параметром */
+
+
+
+/* что за имя класса такое.  */
+.number__III {
+	position: absolute;
+	top: -200px;
+	left: -230px;
+	pointer-events: none;
+}
+
+@media (max-width: 1300px) {
+	.number__III {
+		display: none;
+	}
+}
+
+/*--------------------APPLICATION-BLOCK--------------------*/
+
+
+
+.application {
+	position: relative;
+
+}
+
+.application__container {}
+
+
+.application__body {
+	position: relative;
+	z-index: 2;
+	padding: 90px 0px;
+
+}
+
+.application__column {}
+
+.application__form {
+	display: flex;
+	justify-content: center;
+
+}
+
+@media(min-width:993px) {
+	.application__body {
+		padding: 180px 0px;
+		display: flex;
+		align-items: center;
+	}
+
+	.application__column {
+		flex: 0 1 50%;
+		align-self: flex-end;
+	}
+}
+
+
+
+.application__description {
+	margin: 0px 20px 0px 0px;
+}
+
+.application__title {
+	margin: 0px 0px 30px 0px;
+}
+
+.application__text {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+
+.form__body {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 30px 15px 0px;
+	gap: 35px 30px;
+	justify-items: stretch;
+
+}
+
+.form__column {
+	max-width: 450px;
+}
+
+.form__item {}
+
+.form_input {
+	width: 100%;
+	background: rgba(255, 255, 255, .2);
+	font-size: 14px;
+	line-height: 193%;
+	text-align: center;
+	padding: 10px 30px;
+
+}
+
+.form_input::placeholder {
+	opacity: 1;
+	color: #BEBEBE;
+
+}
+
+.form_input:focus {
+	opacity: 0.7;
+	color: #BEBEBE;
+	outline: 0;
+}
+
+
+.submit-text {
+	font-size: 13px;
+	line-height: 123%;
+	text-align: center;
+	color: #E7E7E7;
+}
+
+.form__button {
+	display: block;
+	width: 100%;
+	background: #D4C17F;
+	font-size: 14px;
+	line-height: 27px;
+	padding: 11px 30px;
+	font-size: 16px;
+	line-height: 27px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.form__button:active {
+	opacity: 0.7;
+}
+
+@media(max-width:676px) {
+	.application__body {
+		padding: 50px 0px;
+	}
+
+	.form__body {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+}
+
+
+
+.application-block__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.application-block__image img {
+	object-position: center;
+}
+
+/*--------------------VIDEO-BLOCK--------------------*/
+
+.video__container {
+	position: relative;
+}
+
+.video__body {
+	position: relative;
+	padding: 0px 0px 60% 0px;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.video__body video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.video__item {}
+
+.page__number {}
+
+.number__IV {
+	position: absolute;
+	top: 0px;
+	right: -200px;
+
+}
+
+@media (max-width: 1300px) {
+	.number__IV {
+		display: none;
+
+	}
+}
+
+/*--------------------MAP-BLOCK--------------------*/
+
+
+.map {}
+
+.map__container {
+	position: relative;
+}
+
+.map__body {
+
+	padding: 180px 0px 0px 0px;
+}
+
+.map__title {
+	margin: 0px 0px 100px 0px;
+}
+
+.map__window {
+	position: relative;
+	padding: 0px 0px 32.25% 0px;
+}
+
+.map__window iframe {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+
+.number__V {
+	position: absolute;
+	top: 100px;
+	left: -130px;
+	pointer-events: none;
+}
+
+@media (max-width: 1300px) {
+	.number__V {
+		display: none;
+	}
+}
+
+
+@media(max-width:993px) {
+	.map__body {
+		padding: 80px 0px 0px 0px;
+	}
+
+	.map__title {
+		margin: 0px 0px 60px 0px;
+	}
+
+	.map__window {
+		padding: 0px 0px 40% 0px;
+	}
+}
+
+@media(max-width:676px) {
+	.map__body {
+		padding: 50px 0px 0px 0px;
+	}
+
+	.map__title {
+		margin: 0px 0px 30px 0px;
+	}
+
+	.map__window {
+		padding: 0px 0px 50% 0px;
+	}
+}
+
+/*--------------------QUESTIONS-BLOCK--------------------*/
+
+.questions {}
+
+.questions__container {}
+
+.questions__dody {
+	padding: 180px 0px;
+}
+
+.questions__title {
+	margin: 0px 0px 50px 0px;
+}
+
+.questions__column {
+	display: flex;
+	justify-content: center;
+}
+
+.questions__item .form__body {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin: 30px 15px 0px;
+	gap: 35px 30px;
+	justify-items: stretch;
+
+}
+
+@media(max-width:993px) {
+	.questions__item .form__body {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.questions__dody {
+		padding: 90px 0px;
+	}
+
+	.questions__title {
+		margin: 0px 0px 40px 0px;
+	}
+}
+
+@media(max-width:676px) {
+	.questions__item .form__body {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.questions__dody {
+		padding: 40px 0px;
+	}
+
+	.questions__title {
+		margin: 0px 0px 20px 0px;
+	}
+}
+
+
+/*--------------------FOOTER-BLOCK--------------------*/
+
+.footer {
+	background-color: #2D343C;
+}
+
+.footer__container {}
+
+.footer__body {
+	padding: 60px 0px 50px 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer__body a {
+	color: #fff;
+}
+
+.footer__column {
+	flex: 0 1 25%;
+}
+
+@media(max-width:991px) {
+	.footer__column {
+		flex: 0 1 50%;
+		text-align: center;
+	}
+
+	.footer__menu {
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width:676px) {
+	.footer__column {
+		flex: 0 1 100%;
+		text-align: center;
+	}
+
+	.footer__body {
+		padding: 30px 0px 20px 0px;
+	}
+}
+
+.footer__item {}
+
+.footer__logo {
+	margin: 0px 0px 15px 0px;
+}
+
+.footer__menu {
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+}
+
+.footer__list {}
+
+.footer__item:not(:last-child) {
+	margin: 0px 0px 15px 0px;
+}
+
+.footer__link {}
+
+.footer__contacts {
+	display: block;
+
+}
+
+.footer__contacts:not(:last-child) {
+	margin: 0px 0px 15px 0px;
+}
+
+.adress {}
+
+.phone {}
+
+.time {}
+
+.E-mail span {
+	color: #D4C17F
+}
+
+.social__media {}
+
+.social__item:not(:last-child) {
+	margin: 0px 20px 0px 0px;
+}
